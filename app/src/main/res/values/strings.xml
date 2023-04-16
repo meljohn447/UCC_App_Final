@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UCC_App_Final</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="melvin_johnson_20201376">Melvin Johnson 20201376</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="staffLists">
+        <item>Natalie Rose</item>
+        <item>Sonia Davidson</item>
+        <item>Tom Amonde</item>
+        <item>Ionie Miller</item>
+        <item>Peter Ndajah</item>
+    </string-array>
+</resources>

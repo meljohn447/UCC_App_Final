@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="10dp"
+    tools:layout_editor_absoluteY="135dp">
+
+
+    <Button
+        android:id="@+id/socialbtn"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:text="Social Media"
+        app:layout_constraintBottom_toTopOf="@+id/emailbtn"
+        app:layout_constraintEnd_toEndOf="@+id/emailbtn"
+        app:layout_constraintStart_toStartOf="@+id/emailbtn"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/directorybtn"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Faculty/Staff Directory"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/coursebtn"
+        app:layout_constraintEnd_toEndOf="@+id/admissionbtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/coursebtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,TextSizeCheck,VisualLintButtonSize,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/coursebtn"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="+ Courses"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/socialbtn"
+        app:layout_constraintStart_toStartOf="@+id/socialbtn"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/admissionbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admissions"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/coursebtn"
+        app:layout_constraintEnd_toEndOf="@+id/socialbtn"
+        app:layout_constraintTop_toTopOf="@+id/coursebtn"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/emailbtn"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/purple_700"
+        android:text="Send To Email HOD"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/viewCoursesbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/viewCoursesbtn"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple_700"
+        android:text="View Courses"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/purple_700"
+        android:padding="15dp"
+        android:text="Submit queries | Check social media Pages |  View Faculty Directory | Instant Access to UCC website | This App was Created By Melvin Johnson 20201376"
+        android:textColor="#F6F6F6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck,VisualLintLongText" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="124dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="@+id/viewCoursesbtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/directorybtn"
+        app:layout_constraintVertical_bias="0.516"
+        app:srcCompat="@drawable/ucc"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="404dp"
+        android:layout_height="346dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="410dp"
+            android:layout_height="333dp"
+            app:srcCompat="@drawable/uccc"
+            tools:ignore="ContentDescription,VisualLintBounds" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
